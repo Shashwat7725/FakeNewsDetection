@@ -7,3 +7,8 @@ body {
   background:#EEF7FF ;
   scroll-behavior: none;
 }
+
+.answer-box{
+  border:solid 3px white;
+  padding-top: 0;
+}

@@ -1,42 +1,34 @@
 export default[
     {
-        title:"DARU BADNAAM KARTI",
-        img:"./images/daru badnam.jpg"
+        title:"Modi to bring one party rule after the election and end elections forever.",
+        img:"./images/1.jpg"
     },
     {
-        title:"O SUDH BUDH KHOYI",
-        img:"./images/o sudh budh.jpeg"
+        title:"Amit Shah said Modi government is committed to implement the Uniform Civil Code (UCC).",
+        img:"./images/2.jpg"
     },
     {
-        title:"RANG JO LAGYO",
-        img:"./images/Rang jo lagyo.jpeg"
+        title:"Bjp claims Congress will take the reservation from SC and ST and give it to Muslims.",
+        img:"./images/3.jpg"
     },
     {
-        title:"SAMAY SAMJHAYEGA",
-        img:"./images/samay samjhayega.jpg"
+        title:"BJP man booked as video shows his minor son casting vote in Madhya pradesh during general election.",
+        img:"./images/4.jpg"
     },
     {
-        title:"SOCHA HAI",
-        img:"./images/socha hai.jpeg"
+        title:"Opposition claims BJP can hack EVMs and mainpulate the election result.",
+        img:"./images/1.jpg"
     },
     {
-        title:"DARU BADNAAM KARTI",
-        img:"./images/daru badnam.jpg"
+        title:"Congress will restore article 370  in Jammu and kashmir if it comes in power.",
+        img:"./images/3.jpg"
     },
     {
-        title:"O SUDH BUDH KHOYI",
-        img:"./images/o sudh budh.jpeg"
+        title:"BJP will give reservation to all upper castes after coming to power again.",
+        img:"./images/2.jpg"
     },
     {
-        title:"RANG JO LAGYO",
-        img:"./images/Rang jo lagyo.jpeg"
-    },
-    {
-        title:"SAMAY SAMJHAYEGA",
-        img:"./images/samay samjhayega.jpg"
-    },
-    {
-        title:"SOCHA HAI",
-        img:"./images/socha hai.jpeg"
+        title:"Bjp will attack pakistan and bring back POK after coming to power.",
+        img:"./images/4.jpg"
     }
 ]
