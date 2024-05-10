@@ -20,7 +20,7 @@ ul{
   
 .heading{
     display: flex;
-    padding-bottom: 5px;
+    padding-top: 15px;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;

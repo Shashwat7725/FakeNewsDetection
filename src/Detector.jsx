@@ -3,6 +3,13 @@ import ReactMarkdown from "react-markdown";
 import Newsdata from "./Newsdata";
 
 function Detector(props) {
+  const getBorderColor = () => {
+    const firstWord = props.answer.trim().split(' ')[0];
+    if (firstWord.toUpperCase() === 'FAKE') 
+      return 'red';
+    else if(firstWord.toUpperCase() === 'REAL') 
+      return '#00FF40';
+  };
   const getNewsInfoFromId = (selectedNewsId) => {
     return Newsdata.find((item, index) => index === selectedNewsId).title;
   };
@@ -21,7 +28,7 @@ function Detector(props) {
 
   return (
     <div className="w-7/12 h-full">
-      <div className="bg-white h-screen flex flex-col justify-center items-center">
+      <div className="bg-white h-screen flex flex-col pt-20 items-center">
         <form
           onSubmit={props.generateAnswer}
           className="w-full h-2/5 md:w-2/3 text-center justify-center items-center"
@@ -38,10 +45,10 @@ function Detector(props) {
             className="bg-blue-300 p-3 rounded-md hover:bg-blue-400 transition-all duration-300"
             disabled={props.generatingAnswer}
           >
-            Generate answer
+          Generate answer
           </button>
         </form>
-        <div className="w-full md:w-2/3 m-auto text-center rounded my-1">
+        <div className="answer-box w-full md:w-2/3 m-auto text-center rounded my-1" style={{ borderColor: getBorderColor() }}>
           <ReactMarkdown className="p-3">{props.answer}</ReactMarkdown>
         </div>
       </div>

@@ -1,10 +1,17 @@
-import React from "react";
+import React ,{useState}from "react";
 
 const Login = (props) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const handleLogin = (e) => {
-    // currently password currPass
-    // userInfo.find(item=>item.password.toLowerCase()===currPass.toLowerCase())
-    props.setLogged(true);
+    e.preventDefault();
+    
+    if (username === 'admin' && password === '1234') {
+      props.setLogged(true);
+    } 
+    else {
+      alert('Invalid username or password');
+    }
   };
 
   return (
@@ -24,11 +31,15 @@ const Login = (props) => {
             className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded"
             type="text"
             placeholder="User name"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
           <input
             className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4"
             type="password"
             placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
 
           <div className="text-center md:text-left grid place-items-center">
